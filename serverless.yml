@@ -37,22 +37,22 @@ provider:
 custom:
   accountId: { Ref: AWS::AccountId }
   amplify:
+    - filename: amplify/awsconfiguration.json
+      type: native
+      appClient: AndroidUserPoolClient
+      s3bucket: UserFiles
     - filename: amplify/aws-exports.js
       type: javascript
-    # - filename: amplify/awsconfiguration.json
-    #   type: native
-    #   appClient: AndroidUserPoolClient
-    #   s3bucket: UserFiles
-    #   appClient: WebUserPoolClient
-    # - filename: amplify/aws-exports.ts
-    #   type: typescript
-    #   appClient: WebUserPoolClient
-    # - filename: amplify/schema.json
-    #   type: schema.json
-    # - filename: amplify/operations.graphql
-    #   type: graphql
-    # - filename: amplify/API.swift
-    #   type: appsync
+      appClient: WebUserPoolClient
+    - filename: amplify/aws-exports.ts
+      type: typescript
+      appClient: WebUserPoolClient
+    - filename: amplify/schema.json
+      type: schema.json
+    - filename: amplify/operations.graphql
+      type: graphql
+    - filename: amplify/API.swift
+      type: appsync
   appSync:
     name: ${self:provider.apiname}
     region: ${self:provider.region}

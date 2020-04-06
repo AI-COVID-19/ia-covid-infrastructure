@@ -1,0 +1,45 @@
+{
+  "UserAgent": "aws-amplify-serverless-plugin/1.4.1",
+  "Version": "1.0",
+  "CognitoUserPool": {
+    "Default": {
+      "PoolId": "us-east-1_IkObyoirG",
+      "Region": "us-east-1",
+      "AppClientId": "3m7duke1a3k4l0m47vf4m9gnta",
+      "AppClientSecret": "1pu2ou474vuphpuafe3jmmq9l8igh1f9rjn4h8b9ha0cclakgej0"
+    }
+  },
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+        "Region": "us-east-1",
+        "PoolId": "us-east-1:94eaf0b6-49fd-4d88-b012-0609faf9e200"
+      }
+    }
+  },
+  "GoogleSignin": {
+    "Permissions": "email,profile,openid",
+    "ClientId-WebApp": "google-webclient-id"
+  },
+  "FacebookSignin": {
+    "Permissions": "public_profile",
+    "AppId": "facebook-app-id"
+  },
+  "AmazonSignin": {
+    "Permissions": "profile",
+    "ClientId": "amazon-client-id"
+  },
+  "AppSync": {
+    "Default": {
+      "ApiUrl": "https://x6bavdhfefamlfolyzk7lsu2sm.appsync-api.us-east-1.amazonaws.com/graphql",
+      "Region": "us-east-1",
+      "AuthMode": "AMAZON_COGNITO_USER_POOLS"
+    }
+  },
+  "S3TransferUtility": {
+    "Default": {
+      "Bucket": "ai-covid-infra-userfiles",
+      "Region": "us-east-1"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+# this is an auto generated file. This will be overwritten
+query AllNotes($limit: Int, $nextToken: String) {
+  allNotes(limit: $limit, nextToken: $nextToken) {
+    notes {
+      NoteId
+      title
+      content
+    }
+    nextToken
+  }
+}
+query GetNote($NoteId: ID!) {
+  getNote(NoteId: $NoteId) {
+    NoteId
+    title
+    content
+  }
+}
+mutation SaveNote($NoteId: ID!, $title: String!, $content: String!) {
+  saveNote(NoteId: $NoteId, title: $title, content: $content) {
+    NoteId
+    title
+    content
+  }
+}
+mutation DeleteNote($NoteId: ID!) {
+  deleteNote(NoteId: $NoteId) {
+    NoteId
+    title
+    content
+  }
+}
