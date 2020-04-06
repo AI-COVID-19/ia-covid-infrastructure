@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "aws-amplify-serverless-plugin": "^1.4.1",
+    "serverless": "^1.67.0",
+    "serverless-appsync-plugin": "^1.2.0",
+    "serverless-offline": "^6.1.4",
+    "serverless-secrets": "^3.0.0-beta.12"
+  }
+}
